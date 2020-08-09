@@ -418,7 +418,8 @@ footer {
   margin-right: 0px;
 }
 
-.customer {
+.customer-link {
+  fill: var(--customer-logo);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,14 +430,14 @@ footer {
   color: var(--customer-logo);
 }
 
-.customer:hover {
-  border-color: var(--accent-color);
+.customer-link:hover {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-.customer:focus {
-  border-color: var(--accent-color);
+.customer-link:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .icon-customer {
@@ -635,11 +636,13 @@ footer .flex-container {
 }
 
 .item-work {
-  /* width: 370px; */
-  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.item-work img {
+  width: 368px;
 }
 
 .item-work:nth-child(3n + 3) {
